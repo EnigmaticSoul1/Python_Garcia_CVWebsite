@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../Images/Metal\ Wall.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loader_container{
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.loader{
+    width: 25px;
+    height: 25px;
+    border: 5px solid;
+    color: #ffffff;
+    border-radius: 5%;
+    animation: loader 2s ease-in-out infinite;
+}
+
+@keyframes loader{
+    to{
+        transform: rotate(720deg);
+    }
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+}
+
+.inner_header{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1{
+    color: #ffffff;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Chakra Petch';
+    font-size: 32px;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px #000000;
+    user-select: none;
+}
+
+.logo_container h1 span{
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a:last-child{
+    padding-right: 0;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+    user-select: none;
+}
+
+.resume_container {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background-color: #101010;
+    padding: 10px;
+}
+
+.resume_container .left_side {
+    width: 35%;
+    background-color: #202020;
+}
+
+.resume_container .left_side .resume_image {
+    width: 100%;
+}
+
+.resume_container .left_side .resume_image img {
+    width: 100%;
+    display: block;
+}
+
+.resume_container .resume_title {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.resume_container .left_side .resume_info {
+    color: #888;
+    font-family: 'Chakra Petch';
+    font-weight: 300;
+}
+
+.resume_container .left_side .resume_bottom {
+    padding: 20px 30px;
+}
+
+.resume_container .resume_item {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.resume_container .resume_item:last-child {
+    border-bottom: 0px;
+}
+
+.resume_container .resume_namerole .name {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.resume_container .resume_namerole .role {
+    color: #888;
+    font-family: 'Chakra Petch';
+    font-weight: 400;
+}
+
+.resume_container .left_side .resume_contact .resume_info:last-child {
+    margin-top: 10px;
+}
+
+.resume_container .left_side .resume_contact .resume_subtitle {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.resume_container .left_side .resume_skills .skills_list {
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.resume_container .left_side .resume_skills .skills_left {
+    margin-top: 5px;
+}
+
+.resume_container .left_side .resume_skills .skills_bar p {
+    position: relative;
+    width: 125px;
+    height: 20px;
+    background-color: #101010;
+    border-radius: 5px;
+}
+
+.resume_container .left_side .resume_skills .skills_bar p span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.resume_container .right_side {
+    width: 65%;
+    padding: 20px 40px;
+}
+
+.resume_container .right_side .resume_namerole .name {
+    color: #fff;
+    font-size: 32px;
+}
+
+.resume_container .right_side .resume_namerole .role {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.resume_container .right_side .resume_item .resume_title {
+    color: #fff;
+}
+
+.resume_container .right_side .resume_data {
+    display: flex;
+    font-family: 'Chakra Petch';
+    font-weight: 300;
+    color: #888;
+}
+
+.resume_container .right_side .resume_data span {
+    font-weight: 700;
+    color: #fff;
+}
+
+.resume_container .right_side .resume_data .year {
+    padding-right: 35px;
+    width: 115px;
+    position: relative;
+}
+
+.resume_container .right_side .resume_data .content {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    width: calc(100% - 115px);
+}
+
+.resume_container .right_side .resume_data .year:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #888;
+    border-radius: 50%;
+}
+
+.resume_container .right_side .resume_data .year:after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 100%;
+    background-color: #888;
+}
+
+.resume_container .right_side .resume_data:last-child .year:after {
+    display: none;
+}
+
+.resume_container .right_side .reward {
+    font-family: 'Chakra Petch';
+    font-weight: 400;
+    color: #888;
+}
+
+@media screen and (max-width: 800px) {
+    .resume_container .right_side .resume_namerole {
+        display: none;
+    }
+
+    .resume_container .left_side .resume_namerole {
+        display: block;
+    }
+
+    .resume_container {
+        width: 95%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .resume_container .left_side, .resume_container .right_side {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .resume_container .right_side {
+        padding: 20px 30px;
+    }
+
+    .resume_container .right_side .resume_data {
+        flex-direction: column;
+    }
+
+    .resume_container .right_side .resume_data .year {
+        padding: 0;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .resume_container .right_side .resume_data .year::before, .resume_container .right_side .resume_data .year::after {
+        display: none;
+    }
+
+    .resume_container .right_side .resume_data .content {
+        width: 100%;
+        padding: 0;
+    }
+}
